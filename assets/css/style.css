@@ -1,0 +1,43 @@
+#welcome{
+  color: #8A2BE2;
+}
+
+p {
+  padding: 25px;
+  text-align: center;
+}
+
+.crystals {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#buttonGreen{
+ filter: hue-rotate(241.5deg);
+}
+
+#buttonPink{
+ filter: hue-rotate(90deg);
+}
+
+#buttonOrange{
+  filter: hue-rotate(180deg);
+}
+
+.panel-title {
+	text-align: center;
+}
+
+#numberMatch {
+  text-align: center;
+  color: purple;
+}
+
+

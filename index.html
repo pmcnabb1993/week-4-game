@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>r
+    <!-- Remember to link your stylesheets! -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hue.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <body class="hiddenGems">
+
+</head>
+<body>
+<!-- Overall Boostrap Grid -->
+<div class="container">
+
+<!-- Jumbotron for Title -->
+  <div class="jumbotron">
+    <h1 class="text-center" id="welcome"><strong>Welcome to the Crystal Game!</strong></h1>
+    <h3 class="text-center">How To Play:</h3>
+    <h4 class="text-center"> <p>You will be given a random number at the start of the game. There are four crystals below and by clicking on one you will add a specific amount of points to your total score. 
+    You win the game by matching your total score to the random number and you lose if you go over. The value of each crystal is hidden and each time the game restarts, the values of each crystal will change.</p>
+  </div>
+
+
+  <div class="row">
+
+    <!-- Left Panel -->
+    <div class="col-lg-6">
+
+      <!--Crystals Panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Crystals</h3>
+        </div>
+          <div class="panel-body">
+          <div class="text-center">
+            <button id="buttonBlue" class="btn-lg" value="divide"><img src="assets/images/crystalblue.png" class="crystals"></button>
+            <button id="buttonGreen" class="btn-lg" value="divide"><img src="assets/images/crystal2.png" class="crystals"></button>
+            <button id="buttonPink" class="btn-lg" value="divide"><img src="assets/images/crystal3.png" class="crystals"></button>
+            <button id="buttonOrange" class="btn-lg" value="divide"><img src="assets/images/crystal4.png" class="crystals"></button>
+           </div>
+        </div>
+      </div>
+      
+        <!-- Results pannel -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Total Score:</h3>
+            </div>
+            <div class="panel-body">
+              <h1><div id="numberScore"></div></h1>
+            </div>
+        </div>
+
+        <!-- Wins and lose Panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Wins and Losses</h3>
+          </div>
+          <div class="panel-body">
+            <h3 id="winsTotal">Wins: </h3>
+            <h3 id="lossesTotal">Losses: </h3>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Crystal Facts!</h3>
+          </div>
+          <div class="panel-body">
+            <ol>
+              <li>1. The shape of a crystal is determined by the its elements and chemical bonds.</li>
+              <li>2. A person who studies crystals is called a crystallographer.</li>
+              <li>3. There are four types of crystals: covalent, metallic, molecular and ionic.</li>
+            </ol>
+          </div>
+        </div>
+
+    </div>
+
+    <!--Right Panel-->
+    <div class="col-lg-6">
+
+      <!--Score you need to match panel-->
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Number to Match</h3>
+          </div>
+          <div class="panel-body">
+            <h1><div id="numberMatch"></div></h1>
+          </div>
+      </div>
+
+
+      <div class="panel panel-default">
+      	<div class="panel-heading">
+      	  <h3 class="panel-title">Crystals are fun!!!</h3>
+      	</div>
+        <div class="panel-body">
+          <img src="assets/images/giphy.gif">
+        </div>
+      </div>
+
+
+    
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
+
